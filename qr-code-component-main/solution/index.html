@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qr Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: {
+                customWhite: "hsl(0, 0%, 100%)",
+                customLightGray: "hsl(212, 45%, 89%)",
+                customGrayishBlue: "hsl(220, 15%, 55%)",
+                customDarkBlue: "hsl(218, 44%, 22%)",
+              },
+            },
+            backgroundImage: {
+              "qr-code":
+                "url('/qr-code-component-main/images/image-qr-code.png')",
+            },
+            fontSize: {
+              custom: "15px",
+            },
+            screens: {
+              desktop: "1440px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
